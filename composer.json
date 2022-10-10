@@ -2,10 +2,6 @@
     "name": "ara-solutions/kiwi-cloud-cms",
     "description": "Tooltips to manage Kiwi Cloud CMS data",
     "type": "symfony-bundle",
-    "require": {
-        "php": ">=7.3",
-        "symfony/framework-bundle": "^4.4@dev"
-    },
     "autoload": {
         "psr-4": {
             "AraSolutions\\KiwiCloudCmsBundle\\": "src/"
