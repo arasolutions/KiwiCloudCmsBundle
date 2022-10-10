@@ -14,5 +14,6 @@
     "license": "MIT",
     "authors": [
         {"name": "ARA Solutions", "email": "contact@ara-solutions.com"}
-    ]
+    ],
+    "minimum-stability": "stable"
 }
