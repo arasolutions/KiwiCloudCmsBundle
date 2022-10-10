@@ -1,0 +1,18 @@
+{
+    "name": "ara-solutions/kiwi-cloud-cms",
+    "description": "Tooltips to manage Kiwi Cloud CMS data",
+    "type": "symfony-bundle",
+    "require": {
+        "php": ">=7.3",
+        "symfony/framework-bundle": "^5.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gebler\\SecurityHeadersBundle\\": "src/"
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {"name": "ARA Solutions", "email": "contact@ara-solutions.com"}
+    ]
+}
