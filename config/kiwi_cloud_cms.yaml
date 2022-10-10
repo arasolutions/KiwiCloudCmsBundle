@@ -1,0 +1,10 @@
+parameters:
+  kiwi_cloud_cms:
+    account:
+      api_key: 0ca181de07aec8e441fab355906c3042d9735fd6
+    cache:
+      feeds: true
+      folder: '%kernel.project_dir%/var/cache/kiwi_cloud_cms'
+      time: 1200
+    log:
+      file: '%kernel.project_dir%/var/log/kiwi_cloud_cms.log'
