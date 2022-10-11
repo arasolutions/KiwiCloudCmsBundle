@@ -1,0 +1,3 @@
+services:
+    AraSolutions\KiwiCloudCmsBundle\Service\KiwiCloudCmsApi:
+        autowire: true
