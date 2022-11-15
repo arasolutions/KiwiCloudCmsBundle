@@ -1,3 +1,13 @@
 services:
     AraSolutions\KiwiCloudCmsBundle\Service\KiwiCloudCmsApi:
         autowire: true
+
+#kiwi_cloud_cms:
+#    account:
+#        api_key: f596a3b8a0e5e08a14f0a95451646e83a22953f3
+#    cache:
+#        feeds: true
+#        folder: '%kernel.project_dir%/var/cache/kiwi_cloud_cms'
+#        time: 1200
+#    log:
+#        file: '%kernel.project_dir%/var/log/kiwi_cloud_cms.log'

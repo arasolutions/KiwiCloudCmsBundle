@@ -17,7 +17,7 @@ class KiwiCloudCmsExtension extends Extension
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
         
         try {
-            $loader->load('kiwi_cloud_cms.yaml');
+//            $loader->load('kiwi_cloud_cms.yaml');
             $loader->load('services.yaml');
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
