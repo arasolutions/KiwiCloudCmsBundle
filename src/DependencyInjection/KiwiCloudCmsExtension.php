@@ -18,6 +18,7 @@ class KiwiCloudCmsExtension extends Extension
         
         try {
             $loader->load('kiwi_cloud_cms.yaml');
+            $loader->load('service.yaml');
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
