@@ -13,25 +13,31 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
-            ->arrayNode('account')
-            ->children()
-            ->scalarNode('api_key')->isRequired()->end()
-            ->end()
-            ->end() // account
-            ->arrayNode('cache')
-            ->children()
-            ->booleanNode('feeds')->defaultValue(true)->end()
-            ->scalarNode('folder')->defaultValue('%kernel.project_dir%/var/cache/kiwi_cloud_cms')->end()
-            ->integerNode('time')->defaultValue(1200)->end()
-            ->end()
-            ->end() // cache
-            ->arrayNode('log')
-            ->children()
-            ->scalarNode('file')->defaultValue('%kernel.project_dir%/var/log/kiwi_cloud_cms.log')->end()
-            ->end()
-            ->end() // log
+            ->scalarNode('account')->end() // account
             ->end()
         ;
+
+//        $treeBuilder->getRootNode()
+//            ->children()
+//            ->arrayNode('account')
+//            ->children()
+//            ->scalarNode('api_key')->isRequired()->end()
+//            ->end()
+//            ->end() // account
+//            ->arrayNode('cache')
+//            ->children()
+//            ->booleanNode('feeds')->defaultValue(true)->end()
+//            ->scalarNode('folder')->defaultValue('%kernel.project_dir%/var/cache/kiwi_cloud_cms')->end()
+//            ->integerNode('time')->defaultValue(1200)->end()
+//            ->end()
+//            ->end() // cache
+//            ->arrayNode('log')
+//            ->children()
+//            ->scalarNode('file')->defaultValue('%kernel.project_dir%/var/log/kiwi_cloud_cms.log')->end()
+//            ->end()
+//            ->end() // log
+//            ->end()
+//        ;
 
 //        $treeBuilder->getRootNode()
 //            ->children()

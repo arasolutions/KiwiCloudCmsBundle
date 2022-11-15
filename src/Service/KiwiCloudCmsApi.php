@@ -65,6 +65,10 @@ class KiwiCloudCmsApi {
 	{
         $kiwiCloudCmsConfig = $container->get('kiwi_cloud_cms');
 
+        var_dump($container->all());
+        var_dump($kiwiCloudCmsConfig);
+        die;
+
         $this->account_api_key = $kiwiCloudCmsConfig['account']['api_key'];
         $this->cache_feeds = $kiwiCloudCmsConfig['cache']['feeds'];
         $this->cache_folder = $kiwiCloudCmsConfig['cache']['folder'];
