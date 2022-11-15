@@ -1,4 +1,5 @@
-kiwi_cloud_cms:
-  twitter:
-    client_id: 123
-    client_secret: 'aaa'
+parameters:
+  kiwi_cloud_cms:
+    twitter:
+      client_id: 123
+      client_secret: 'aaa'
