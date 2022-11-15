@@ -18,13 +18,13 @@ class KiwiCloudCmsExtension extends Extension
         
         try {
             $loader->load('kiwi_cloud_cms.yaml');
-            $loader->load('services.yaml');
         } catch (Exception $e) {
             throw new Exception($e->getMessage());
         }
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
+
         foreach ($config as $key => $value) {
             $container->setParameter('kiwi_cloud_cms.' . $key, $value);
         }
