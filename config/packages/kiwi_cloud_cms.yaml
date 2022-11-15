@@ -9,4 +9,6 @@
 #    log:
 #      file: '%kernel.project_dir%/var/log/kiwi_cloud_cms.log'
 kiwi_cloud_cms:
-  account: your_api_key
+  twitter:
+    client_id: 123
+    client_secret: your_secret

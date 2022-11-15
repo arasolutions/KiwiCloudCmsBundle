@@ -13,7 +13,12 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
-            ->scalarNode('account')->end() // account
+            ->arrayNode('twitter')
+            ->children()
+            ->integerNode('client_id')->end()
+            ->scalarNode('client_secret')->end()
+            ->end()
+            ->end() // twitter
             ->end()
         ;
 

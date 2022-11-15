@@ -63,9 +63,10 @@ class KiwiCloudCmsApi {
 
 	function __construct(ContainerBagInterface $container)
 	{
+        var_dump($container->all());
+
         $kiwiCloudCmsConfig = $container->get('kiwi_cloud_cms');
 
-        var_dump($container->all());
         var_dump($kiwiCloudCmsConfig);
         die;
 
