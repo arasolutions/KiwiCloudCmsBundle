@@ -30,8 +30,8 @@ class KiwiCloudCmsExtension extends Extension
 //        $definition->replaceArgument(0, $config['twitter']['client_id']);
 //        $definition->replaceArgument(1, $config['twitter']['client_secret']);
 
-//        foreach ($config as $key => $value) {
-//            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
-//        }
+        foreach ($config as $key => $value) {
+            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
+        }
     }
 }
