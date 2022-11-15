@@ -25,8 +25,12 @@ class KiwiCloudCmsExtension extends Extension
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
 
-        foreach ($config as $key => $value) {
-            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
-        }
+        $definition = $container->getDefinition('acme.social.twitter_client');
+        $definition->replaceArgument(0, $config['twitter']['client_id']);
+        $definition->replaceArgument(1, $config['twitter']['client_secret']);
+
+//        foreach ($config as $key => $value) {
+//            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
+//        }
     }
 }
