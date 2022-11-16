@@ -1,4 +1,5 @@
 kiwi_cloud_cms:
+  base_url: 'https://www.kiwicloudcms.com/'
   account:
     api_key: your_api_key
   cache:
