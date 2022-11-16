@@ -31,8 +31,9 @@ var_dump($config);
 //        $definition->replaceArgument(0, $config['twitter']['client_id']);
 //        $definition->replaceArgument(1, $config['twitter']['client_secret']);
 
-        foreach ($config as $key => $value) {
-            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
-        }
+        $container->setParameter('kiwi_cloud_cms', $config);
+//        foreach ($config as $key => $value) {
+//            $container->setParameter('kiwi_cloud_cms.' . $key, $value);
+//        }
     }
 }
