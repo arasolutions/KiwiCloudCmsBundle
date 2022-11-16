@@ -307,8 +307,8 @@ class KiwiCloudCmsApi {
 	 * 
 	 */
 	function prep_data_out($data, $type = false)
-	{	
-		return $data;
+	{
+        return json_decode($data);
 	}
 	
 	
