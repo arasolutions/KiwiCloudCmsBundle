@@ -1,14 +1,9 @@
-#parameters:
-#  kiwi_cloud_cms:
-#    account:
-#      api_key: your_api_key
-#    cache:
-#      feeds: true
-#      folder: '%kernel.project_dir%/var/cache/kiwi_cloud_cms'
-#      time: 1200
-#    log:
-#      file: '%kernel.project_dir%/var/log/kiwi_cloud_cms.log'
 kiwi_cloud_cms:
-  twitter:
-    client_id: 123
-    client_secret: your_secret
+  account:
+    api_key: your_api_key
+  cache:
+    feeds: true
+    folder: '%kernel.project_dir%/var/cache/kiwi_cloud_cms'
+    time: 1200
+  log:
+    file: '%kernel.project_dir%/var/log/kiwi_cloud_cms.log'

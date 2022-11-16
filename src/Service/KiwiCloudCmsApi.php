@@ -63,12 +63,7 @@ class KiwiCloudCmsApi {
 
 	function __construct(ContainerBagInterface $container)
 	{
-        var_dump($container->all());
-
         $kiwiCloudCmsConfig = $container->get('kiwi_cloud_cms');
-
-        var_dump($kiwiCloudCmsConfig);
-        die;
 
         $this->account_api_key = $kiwiCloudCmsConfig['account']['api_key'];
         $this->cache_feeds = $kiwiCloudCmsConfig['cache']['feeds'];

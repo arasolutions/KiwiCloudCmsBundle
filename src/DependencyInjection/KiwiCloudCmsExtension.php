@@ -16,16 +16,16 @@ class KiwiCloudCmsExtension extends Extension
     {
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../../config'));
         
-//        try {
-//            $loader->load('kiwi_cloud_cms.yaml');
+        try {
             $loader->load('services.yaml');
-//        } catch (Exception $e) {
-//            throw new Exception($e->getMessage());
-//        }
+        } catch (Exception $e) {
+            throw new Exception($e->getMessage());
+        }
 
         $configuration = new Configuration();
         $config = $this->processConfiguration($configuration, $configs);
-var_dump($config);
+
+//var_dump($config);
 //        $container->setParameter('toto', $config['account']);
 //        $definition = $container->getDefinition('acme.social.twitter_client');
 //        $definition->replaceArgument(0, $config['twitter']['client_id']);
