@@ -1,3 +1,6 @@
 services:
     AraSolutions\KiwiCloudCmsBundle\Service\KiwiCloudCmsApi:
         autowire: true
+    AraSolutions\KiwiCloudCmsBundle\Twig\ImageExtension:
+        tags:
+            - { name: twig.extension }
