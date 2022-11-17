@@ -90,10 +90,11 @@ class KiwiCloudCmsApi {
 	 */
 	function call($data = array(), $force_cache = 'default')
 	{
-		
-		/*
-		*	If method wasn't included in the $data array, assume it's "feed"	
-		*/
+        $this->kiwi_status_ok = 'unknown';
+
+        /*
+        *	If method wasn't included in the $data array, assume it's "feed"
+        */
 		$method = isset($data['method']) ? $data['method'] : 'liste';
 		
 		/*
