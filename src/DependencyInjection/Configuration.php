@@ -24,6 +24,7 @@ class Configuration implements ConfigurationInterface
 
         $treeBuilder->getRootNode()
             ->children()
+            ->scalarNode('base_url')->isRequired()->end()
             ->arrayNode('account')
             ->children()
             ->scalarNode('api_key')->isRequired()->end()
